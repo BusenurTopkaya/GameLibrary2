@@ -1,0 +1,26 @@
+﻿@model GameLibray.Models.Entities.GPlayerAge
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>PlayerAge</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.PlayerAge)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PlayerAge)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.PlayerAgeId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
